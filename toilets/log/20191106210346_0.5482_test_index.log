@@ -1,0 +1,120 @@
+2019-11-06 21:03:45 | 219.249.231.40
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-c56a4577105b4c2fb925f340c7e1abf9",
+    "X-Chappie-Footprint": "chp-c56a4577105b4c2fb925f340c7e1abf9",
+    "Content-Length": "1347",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy001 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "닮은 유명인 : 양한열\r\n닮은 퍼센트 : 1%\r\n성별 : 인식 불가99.9%\r\n나이 : 0~2세\r\n표정 : 그냥69.6%\r\n방향 : 정면 얼굴100%"
+                }
+            }
+        ],
+        "quickReplies": [
+            {
+                "label": "다시하기",
+                "action": "message",
+                "messageText": "얼굴"
+            },
+            {
+                "label": "처음으로",
+                "action": "message",
+                "messageText": "처음으로"
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "api": {
+        "origin": "set_face",
+        "value": "set_face",
+        "groupName": ""
+    },
+    "image": {
+        "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3qhLtIIyo\/g9duC4alHa3iEpxI3C4nLK\/i_8fcguj6clth4.jpeg",
+        "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3qhLtIIyo\/g9duC4alHa3iEpxI3C4nLK\/i_8fcguj6clth4.jpeg",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d71e75192690d0001813876",
+        "name": "얼굴인식",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend",
+            "media": {
+                "type": "image",
+                "url": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3qhLtIIyo\/g9duC4alHa3iEpxI3C4nLK\/i_8fcguj6clth4.jpeg"
+            }
+        },
+        "block": {
+            "id": "5d71e75192690d0001813876",
+            "name": "얼굴인식"
+        },
+        "utterance": "얼굴",
+        "lang": "kr",
+        "user": {
+            "id": "92cc4cf2c5130a610cfe1bde3e4247e6dffbe434661339a45431f22017a2216c0f",
+            "type": "botUserKey",
+            "properties": {
+                "botUserKey": "92cc4cf2c5130a610cfe1bde3e4247e6dffbe434661339a45431f22017a2216c0f",
+                "plusfriendUserKey": "VfG3eDnFLx2w",
+                "bot_user_key": "92cc4cf2c5130a610cfe1bde3e4247e6dffbe434661339a45431f22017a2216c0f",
+                "plusfriend_user_key": "VfG3eDnFLx2w"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": [],
+        "params": {
+            "api": "set_face",
+            "image": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3qhLtIIyo\/g9duC4alHa3iEpxI3C4nLK\/i_8fcguj6clth4.jpeg"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "api": {
+                "origin": "set_face",
+                "value": "set_face",
+                "groupName": ""
+            },
+            "image": {
+                "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3qhLtIIyo\/g9duC4alHa3iEpxI3C4nLK\/i_8fcguj6clth4.jpeg",
+                "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3qhLtIIyo\/g9duC4alHa3iEpxI3C4nLK\/i_8fcguj6clth4.jpeg",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

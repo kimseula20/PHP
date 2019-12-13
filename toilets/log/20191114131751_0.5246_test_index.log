@@ -1,0 +1,33 @@
+2019-11-14 13:17:51 | 219.249.231.40
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "grimlock-fc4aec9ea46746bf9cad692f1fd955e4",
+    "X-Chappie-Footprint": "thrust-67692937-5c9c-4080-99c9-04bfca8b3819",
+    "Content-Length": "471",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "sakim.makebot.ai",
+    "Via": "1.1 bot-proxy001 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "디폴트라능"
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+null
+| Request Data 
+null
+test : non

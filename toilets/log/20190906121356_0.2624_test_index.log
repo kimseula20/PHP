@@ -1,0 +1,110 @@
+2019-09-06 12:13:56 | 219.249.231.41
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-c4e8dfd64d284c189375126eaa436f3e",
+    "X-Chappie-Footprint": "chp-c4e8dfd64d284c189375126eaa436f3e",
+    "Content-Length": "783",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy002 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "code": 1,
+    "data": [
+        {
+            "name": "khs",
+            "age": "18"
+        },
+        {
+            "name": "kks",
+            "age": "19"
+        },
+        {
+            "name": "kkk",
+            "age": "20"
+        }
+    ],
+    "template": {
+        "0": {
+            "simpleText": {
+                "text": "잘못된 접근입니다.처음으로 돌아가세요."
+            }
+        },
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "잘못된 접근입니다.처음으로 돌아가세요."
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "api": {
+        "origin": "get_table",
+        "value": "get_table",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d70a9fd8192ac00011f6d84",
+        "name": "DB테스트",
+        "extra": {
+            "reason": {
+                "code": 1,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend"
+        },
+        "block": {
+            "id": "5d70a9fd8192ac00011f6d84",
+            "name": "DB테스트"
+        },
+        "utterance": "비",
+        "lang": "kr",
+        "user": {
+            "id": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+            "type": "botUserKey",
+            "properties": {
+                "plusfriendUserKey": "ZUW9n85xbxEr",
+                "botUserKey": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "tran_api",
+        "clientExtra": null,
+        "params": {
+            "api": "get_table"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "api": {
+                "origin": "get_table",
+                "value": "get_table",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

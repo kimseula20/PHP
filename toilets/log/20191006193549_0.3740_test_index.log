@@ -1,0 +1,98 @@
+2019-10-06 19:35:38 | 219.249.231.41
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-a5f68ff55eb94a72927f2acc9a8f5bb9",
+    "X-Chappie-Footprint": "chp-a5f68ff55eb94a72927f2acc9a8f5bb9",
+    "Content-Length": "1236",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy002 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": "{\"errorCode\":\"ER21\",\"errorMessage\":\"Timeout error (서버에서 이미지를 시간내에 처리하지 못했습니다.)\"}"
+}
+| Params Data 
+{
+    "api": {
+        "origin": "set_face",
+        "value": "set_face",
+        "groupName": ""
+    },
+    "image": {
+        "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k30CZBT1\/OEZYF1ex0vntVR7WlEZw0k\/i_dv0pichdm9qo1.jpeg",
+        "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k30CZBT1\/OEZYF1ex0vntVR7WlEZw0k\/i_dv0pichdm9qo1.jpeg",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d71e75192690d0001813876",
+        "name": "얼굴인식",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend",
+            "media": {
+                "type": "image",
+                "url": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k30CZBT1\/OEZYF1ex0vntVR7WlEZw0k\/i_dv0pichdm9qo1.jpeg"
+            }
+        },
+        "block": {
+            "id": "5d71e75192690d0001813876",
+            "name": "얼굴인식"
+        },
+        "utterance": "얼굴인식",
+        "lang": "kr",
+        "user": {
+            "id": "bbb215f625b0d91f4b0646e80b5ea52d6109ce0951a7445a2b8f7461fb9ae905b8",
+            "type": "botUserKey",
+            "properties": {
+                "plusfriendUserKey": "LTQO_bOotsAo",
+                "botUserKey": "bbb215f625b0d91f4b0646e80b5ea52d6109ce0951a7445a2b8f7461fb9ae905b8"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": [],
+        "params": {
+            "api": "set_face",
+            "image": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k30CZBT1\/OEZYF1ex0vntVR7WlEZw0k\/i_dv0pichdm9qo1.jpeg"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "api": {
+                "origin": "set_face",
+                "value": "set_face",
+                "groupName": ""
+            },
+            "image": {
+                "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k30CZBT1\/OEZYF1ex0vntVR7WlEZw0k\/i_dv0pichdm9qo1.jpeg",
+                "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k30CZBT1\/OEZYF1ex0vntVR7WlEZw0k\/i_dv0pichdm9qo1.jpeg",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

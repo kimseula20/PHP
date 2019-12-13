@@ -1,0 +1,94 @@
+2019-09-11 18:39:16 | 219.249.231.42
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-7c0a8e61f1184f2f8b0e071fd62d276f",
+    "X-Chappie-Footprint": "chp-7c0a8e61f1184f2f8b0e071fd62d276f",
+    "Content-Length": "853",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy003 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": "{\"errorCode\":\"ER11\",\"errorMessage\":\"Abnormal image format (인식할 수 없는 이미지 입니다.)\"}"
+}
+| Params Data 
+{
+    "api": {
+        "origin": "set_face",
+        "value": "set_face",
+        "groupName": ""
+    },
+    "image": {
+        "origin": "ㅊ",
+        "value": "ㅊ",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d71e75192690d0001813876",
+        "name": "얼굴인식",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend"
+        },
+        "block": {
+            "id": "5d71e75192690d0001813876",
+            "name": "얼굴인식"
+        },
+        "utterance": "얼굴",
+        "lang": "kr",
+        "user": {
+            "id": "bbb215f625b0d91f4b0646e80b5ea52d6109ce0951a7445a2b8f7461fb9ae905b8",
+            "type": "botUserKey",
+            "properties": {
+                "plusfriendUserKey": "LTQO_bOotsAo",
+                "botUserKey": "bbb215f625b0d91f4b0646e80b5ea52d6109ce0951a7445a2b8f7461fb9ae905b8"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": [],
+        "params": {
+            "api": "set_face",
+            "image": "ㅊ"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "api": {
+                "origin": "set_face",
+                "value": "set_face",
+                "groupName": ""
+            },
+            "image": {
+                "origin": "ㅊ",
+                "value": "ㅊ",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

@@ -1,0 +1,142 @@
+2019-09-24 16:05:13 | 219.249.231.40
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-3ce177a5f05242e3a0272af0b434832e",
+    "X-Chappie-Footprint": "chp-3ce177a5f05242e3a0272af0b434832e",
+    "Content-Length": "1140",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy001 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "basicCard": {
+                    "title": "번역 내용 : こんにちは。私はキムヒョンスだよ。イジャシクよ。",
+                    "buttons": [
+                        {
+                            "action": "webLink",
+                            "label": "음성으로 듣기",
+                            "webLinkUrl": "http:\/\/khs.chatbotstore.ai\/makeHS\/api\/css.mp3"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "tran_text": {
+        "origin": "안녕 난 김현수야 이자식아",
+        "value": "안녕 난 김현수야 이자식아",
+        "groupName": ""
+    },
+    "sour": {
+        "origin": "ko",
+        "value": "ko",
+        "groupName": ""
+    },
+    "choice": {
+        "origin": "1",
+        "value": "1",
+        "groupName": ""
+    },
+    "api": {
+        "origin": "set_tran",
+        "value": "set_tran",
+        "groupName": ""
+    },
+    "lang": {
+        "origin": "ja",
+        "value": "ja",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d896a19b617ea0001808dde",
+        "name": "일본어",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend"
+        },
+        "block": {
+            "id": "5d896a19b617ea0001808dde",
+            "name": "일본어"
+        },
+        "utterance": "12",
+        "lang": "kr",
+        "user": {
+            "id": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+            "type": "botUserKey",
+            "properties": {
+                "plusfriendUserKey": "ZUW9n85xbxEr",
+                "botUserKey": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": [],
+        "params": {
+            "tran_text": "안녕 난 김현수야 이자식아",
+            "sour": "ko",
+            "choice": "1",
+            "api": "set_tran",
+            "lang": "ja"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "tran_text": {
+                "origin": "안녕 난 김현수야 이자식아",
+                "value": "안녕 난 김현수야 이자식아",
+                "groupName": ""
+            },
+            "sour": {
+                "origin": "ko",
+                "value": "ko",
+                "groupName": ""
+            },
+            "choice": {
+                "origin": "1",
+                "value": "1",
+                "groupName": ""
+            },
+            "api": {
+                "origin": "set_tran",
+                "value": "set_tran",
+                "groupName": ""
+            },
+            "lang": {
+                "origin": "ja",
+                "value": "ja",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

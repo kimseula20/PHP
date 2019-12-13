@@ -1,0 +1,122 @@
+2019-11-11 10:40:01 | 219.249.231.41
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-55e89b2860c145fcbc303bd2f18a654b",
+    "X-Chappie-Footprint": "chp-55e89b2860c145fcbc303bd2f18a654b",
+    "Content-Length": "1365",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy002 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "닮은 유명인 : 아이유\r\n닮은 퍼센트 : 100%\r\n성별 : 여자100%\r\n나이 : 20~24세\r\n표정 : 그냥100%\r\n방향 : 정면 얼굴99.7%"
+                }
+            }
+        ],
+        "quickReplies": [
+            {
+                "label": "다시하기",
+                "action": "message",
+                "messageText": "얼굴"
+            },
+            {
+                "label": "처음으로",
+                "action": "message",
+                "messageText": "처음으로"
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "api": {
+        "origin": "set_face",
+        "value": "set_face",
+        "groupName": ""
+    },
+    "image": {
+        "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3pyWCIu6c\/UL6qEdzvpkJkS6vZo9rKdk\/i_l132kup8k5fi1.jpg",
+        "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3pyWCIu6c\/UL6qEdzvpkJkS6vZo9rKdk\/i_l132kup8k5fi1.jpg",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d71e75192690d0001813876",
+        "name": "얼굴인식",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend",
+            "media": {
+                "type": "image",
+                "url": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3pyWCIu6c\/UL6qEdzvpkJkS6vZo9rKdk\/i_l132kup8k5fi1.jpg"
+            }
+        },
+        "block": {
+            "id": "5d71e75192690d0001813876",
+            "name": "얼굴인식"
+        },
+        "utterance": "얼굴인식",
+        "lang": "kr",
+        "user": {
+            "id": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+            "type": "botUserKey",
+            "properties": {
+                "botUserKey": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+                "plusfriendUserKey": "ZUW9n85xbxEr",
+                "bot_user_key": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+                "plusfriend_user_key": "ZUW9n85xbxEr"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": {
+            "code": 19767
+        },
+        "params": {
+            "api": "set_face",
+            "image": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3pyWCIu6c\/UL6qEdzvpkJkS6vZo9rKdk\/i_l132kup8k5fi1.jpg"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "api": {
+                "origin": "set_face",
+                "value": "set_face",
+                "groupName": ""
+            },
+            "image": {
+                "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3pyWCIu6c\/UL6qEdzvpkJkS6vZo9rKdk\/i_l132kup8k5fi1.jpg",
+                "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3pyWCIu6c\/UL6qEdzvpkJkS6vZo9rKdk\/i_l132kup8k5fi1.jpg",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

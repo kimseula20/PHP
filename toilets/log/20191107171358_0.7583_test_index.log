@@ -1,0 +1,148 @@
+2019-11-07 17:13:57 | 219.249.231.40
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-c6de351b6283402f9c4ecae1201ce8c6",
+    "X-Chappie-Footprint": "chp-c6de351b6283402f9c4ecae1201ce8c6",
+    "Content-Length": "1513",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy001 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "basicCard": {
+                    "title": "번역 내용 :  http:\/\/dn-a4.talk.kakao.com\/talka\/hzqsyoMq5C\/ODkY2vb1lbyx76PRUyoyFK\/7l52a6-aac.m4a",
+                    "buttons": [
+                        {
+                            "action": "webLink",
+                            "label": "음성으로 듣기",
+                            "webLinkUrl": "http:\/\/khs.chatbotstore.ai\/makeHS\/api\/css.mp3"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "tran_text": {
+        "origin": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzqsyoMq5C\/ODkY2vb1lbyx76PRUyoyFK\/7l52a6-aac.m4a",
+        "value": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzqsyoMq5C\/ODkY2vb1lbyx76PRUyoyFK\/7l52a6-aac.m4a",
+        "groupName": ""
+    },
+    "sour": {
+        "origin": "ko",
+        "value": "ko",
+        "groupName": ""
+    },
+    "choice": {
+        "origin": "1",
+        "value": "1",
+        "groupName": ""
+    },
+    "api": {
+        "origin": "set_tran",
+        "value": "set_tran",
+        "groupName": ""
+    },
+    "lang": {
+        "origin": "en",
+        "value": "en",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d6c75038192ac00011f4fe1",
+        "name": "영어",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend",
+            "media": {
+                "type": "audio",
+                "url": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzqsyoMq5C\/ODkY2vb1lbyx76PRUyoyFK\/7l52a6-aac.m4a"
+            }
+        },
+        "block": {
+            "id": "5d6c75038192ac00011f4fe1",
+            "name": "영어"
+        },
+        "utterance": "영번",
+        "lang": "kr",
+        "user": {
+            "id": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+            "type": "botUserKey",
+            "properties": {
+                "botUserKey": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+                "plusfriendUserKey": "ZUW9n85xbxEr",
+                "bot_user_key": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+                "plusfriend_user_key": "ZUW9n85xbxEr"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": [],
+        "params": {
+            "tran_text": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzqsyoMq5C\/ODkY2vb1lbyx76PRUyoyFK\/7l52a6-aac.m4a",
+            "sour": "ko",
+            "choice": "1",
+            "api": "set_tran",
+            "lang": "en"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "tran_text": {
+                "origin": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzqsyoMq5C\/ODkY2vb1lbyx76PRUyoyFK\/7l52a6-aac.m4a",
+                "value": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzqsyoMq5C\/ODkY2vb1lbyx76PRUyoyFK\/7l52a6-aac.m4a",
+                "groupName": ""
+            },
+            "sour": {
+                "origin": "ko",
+                "value": "ko",
+                "groupName": ""
+            },
+            "choice": {
+                "origin": "1",
+                "value": "1",
+                "groupName": ""
+            },
+            "api": {
+                "origin": "set_tran",
+                "value": "set_tran",
+                "groupName": ""
+            },
+            "lang": {
+                "origin": "en",
+                "value": "en",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

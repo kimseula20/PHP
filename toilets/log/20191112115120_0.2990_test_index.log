@@ -1,0 +1,100 @@
+2019-11-12 11:51:20 | 219.249.231.42
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-4cf686d803d34c9cbde8e50431c9192c",
+    "X-Chappie-Footprint": "chp-4cf686d803d34c9cbde8e50431c9192c",
+    "Content-Length": "891",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy003 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "khs18kks19kkk20"
+                }
+            }
+        ],
+        "quickReplies": [
+            {
+                "label": "처음으로",
+                "action": "message",
+                "messageText": "처음으로"
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "api": {
+        "origin": "dbt",
+        "value": "dbt",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5dca1e06b617ea000179a27e",
+        "name": "db테스트",
+        "extra": {
+            "reason": {
+                "code": 1,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend"
+        },
+        "block": {
+            "id": "5dca1e06b617ea000179a27e",
+            "name": "db테스트"
+        },
+        "utterance": "듸븨",
+        "lang": "kr",
+        "user": {
+            "id": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+            "type": "botUserKey",
+            "properties": {
+                "botUserKey": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+                "plusfriendUserKey": "ZUW9n85xbxEr",
+                "bot_user_key": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+                "plusfriend_user_key": "ZUW9n85xbxEr"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": null,
+        "params": {
+            "api": "dbt"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "api": {
+                "origin": "dbt",
+                "value": "dbt",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

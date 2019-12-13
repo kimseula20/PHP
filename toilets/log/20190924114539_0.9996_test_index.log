@@ -1,0 +1,106 @@
+2019-09-24 11:45:36 | 219.249.231.42
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-5233aad470924ceabcb84b6d1ebc2017",
+    "X-Chappie-Footprint": "chp-5233aad470924ceabcb84b6d1ebc2017",
+    "Content-Length": "1211",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy003 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "내용 : 안녕"
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "api": {
+        "origin": "set_csr",
+        "value": "set_csr",
+        "groupName": ""
+    },
+    "url": {
+        "origin": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzmDc36O5E\/aJd2pILH61AGToi8FRtSv1\/t2h5su-aac.m4a",
+        "value": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzmDc36O5E\/aJd2pILH61AGToi8FRtSv1\/t2h5su-aac.m4a",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d882325ffa748000151588e",
+        "name": "음성읽어주기",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend",
+            "media": {
+                "type": "audio",
+                "url": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzmDc36O5E\/aJd2pILH61AGToi8FRtSv1\/t2h5su-aac.m4a"
+            }
+        },
+        "block": {
+            "id": "5d882325ffa748000151588e",
+            "name": "음성읽어주기"
+        },
+        "utterance": "읽기",
+        "lang": "kr",
+        "user": {
+            "id": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+            "type": "botUserKey",
+            "properties": {
+                "plusfriendUserKey": "ZUW9n85xbxEr",
+                "botUserKey": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": [],
+        "params": {
+            "api": "set_csr",
+            "url": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzmDc36O5E\/aJd2pILH61AGToi8FRtSv1\/t2h5su-aac.m4a"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "api": {
+                "origin": "set_csr",
+                "value": "set_csr",
+                "groupName": ""
+            },
+            "url": {
+                "origin": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzmDc36O5E\/aJd2pILH61AGToi8FRtSv1\/t2h5su-aac.m4a",
+                "value": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzmDc36O5E\/aJd2pILH61AGToi8FRtSv1\/t2h5su-aac.m4a",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

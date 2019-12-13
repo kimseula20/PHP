@@ -1,0 +1,142 @@
+2019-09-24 18:07:46 | 219.249.231.42
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-d5d3c0c8f8b24009932631f6228b71ac",
+    "X-Chappie-Footprint": "chp-d5d3c0c8f8b24009932631f6228b71ac",
+    "Content-Length": "1057",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy003 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "basicCard": {
+                    "title": "번역 내용 : Error 내용:{\"error\":{\"errorCode\":\"200\",\"message\":\"Authentication Failed\"}}",
+                    "buttons": [
+                        {
+                            "action": "webLink",
+                            "label": "음성으로 듣기",
+                            "webLinkUrl": "http:\/\/khs.chatbotstore.ai\/makeHS\/api\/css.mp3"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "tran_text": {
+        "origin": "2",
+        "value": "2",
+        "groupName": ""
+    },
+    "sour": {
+        "origin": "ko",
+        "value": "ko",
+        "groupName": ""
+    },
+    "choice": {
+        "origin": "2",
+        "value": "2",
+        "groupName": ""
+    },
+    "api": {
+        "origin": "set_tran",
+        "value": "set_tran",
+        "groupName": ""
+    },
+    "lang": {
+        "origin": "zh-CN",
+        "value": "zh-CN",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d6c7605ffa7480001c1ea3d",
+        "name": "중국어 간체",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend"
+        },
+        "block": {
+            "id": "5d6c7605ffa7480001c1ea3d",
+            "name": "중국어 간체"
+        },
+        "utterance": "2",
+        "lang": "kr",
+        "user": {
+            "id": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+            "type": "botUserKey",
+            "properties": {
+                "plusfriendUserKey": "ZUW9n85xbxEr",
+                "botUserKey": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": [],
+        "params": {
+            "tran_text": "2",
+            "sour": "ko",
+            "choice": "2",
+            "api": "set_tran",
+            "lang": "zh-CN"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "tran_text": {
+                "origin": "2",
+                "value": "2",
+                "groupName": ""
+            },
+            "sour": {
+                "origin": "ko",
+                "value": "ko",
+                "groupName": ""
+            },
+            "choice": {
+                "origin": "2",
+                "value": "2",
+                "groupName": ""
+            },
+            "api": {
+                "origin": "set_tran",
+                "value": "set_tran",
+                "groupName": ""
+            },
+            "lang": {
+                "origin": "zh-CN",
+                "value": "zh-CN",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

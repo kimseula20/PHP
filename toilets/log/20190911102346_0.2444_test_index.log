@@ -1,0 +1,135 @@
+2019-09-11 10:23:46 | 219.249.231.42
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-919fb3e992e04112a22133eaffd7b798",
+    "X-Chappie-Footprint": "chp-919fb3e992e04112a22133eaffd7b798",
+    "Content-Length": "1061",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy003 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "Who are you?"
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "tran_text": {
+        "origin": "넌누구냐",
+        "value": "넌누구냐",
+        "groupName": ""
+    },
+    "sour": {
+        "origin": "ko",
+        "value": "ko",
+        "groupName": ""
+    },
+    "choice": {
+        "origin": "1",
+        "value": "1",
+        "groupName": ""
+    },
+    "api": {
+        "origin": "set_tran",
+        "value": "set_tran",
+        "groupName": ""
+    },
+    "lang": {
+        "origin": "en",
+        "value": "en",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d6c75038192ac00011f4fe1",
+        "name": "영어",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend"
+        },
+        "block": {
+            "id": "5d6c75038192ac00011f4fe1",
+            "name": "영어"
+        },
+        "utterance": "1",
+        "lang": "kr",
+        "user": {
+            "id": "b6e35a4ab6704d44e19c4d58110868c95106b7b078e6ab5a7440dda594d79ade7e",
+            "type": "botUserKey",
+            "properties": {
+                "plusfriendUserKey": "aYHZSOAn52L1",
+                "botUserKey": "b6e35a4ab6704d44e19c4d58110868c95106b7b078e6ab5a7440dda594d79ade7e"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": [],
+        "params": {
+            "tran_text": "넌누구냐",
+            "sour": "ko",
+            "choice": "1",
+            "api": "set_tran",
+            "lang": "en"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "tran_text": {
+                "origin": "넌누구냐",
+                "value": "넌누구냐",
+                "groupName": ""
+            },
+            "sour": {
+                "origin": "ko",
+                "value": "ko",
+                "groupName": ""
+            },
+            "choice": {
+                "origin": "1",
+                "value": "1",
+                "groupName": ""
+            },
+            "api": {
+                "origin": "set_tran",
+                "value": "set_tran",
+                "groupName": ""
+            },
+            "lang": {
+                "origin": "en",
+                "value": "en",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

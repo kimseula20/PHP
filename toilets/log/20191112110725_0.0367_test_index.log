@@ -1,0 +1,144 @@
+2019-11-12 11:07:24 | 219.249.231.40
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-c649dbc3a84a4786b097164b26371f23",
+    "X-Chappie-Footprint": "chp-c649dbc3a84a4786b097164b26371f23",
+    "Content-Length": "1194",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy001 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "basicCard": {
+                    "title": "번역 내용 : Hello?",
+                    "buttons": [
+                        {
+                            "action": "webLink",
+                            "label": "음성으로 듣기",
+                            "webLinkUrl": "http:\/\/khs.chatbotstore.ai\/makeHS\/api\/css.mp3"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "tran_text": {
+        "origin": "안녕?",
+        "value": "안녕?",
+        "groupName": ""
+    },
+    "sour": {
+        "origin": "ko",
+        "value": "ko",
+        "groupName": ""
+    },
+    "choice": {
+        "origin": "1",
+        "value": "1",
+        "groupName": ""
+    },
+    "api": {
+        "origin": "set_tran",
+        "value": "set_tran",
+        "groupName": ""
+    },
+    "lang": {
+        "origin": "en",
+        "value": "en",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5dca09ff92690d0001cb014f",
+        "name": "영어",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend"
+        },
+        "block": {
+            "id": "5dca09ff92690d0001cb014f",
+            "name": "영어"
+        },
+        "utterance": "1",
+        "lang": "kr",
+        "user": {
+            "id": "9ad269b87cbf88ad16964a583a2b84a00261d4bd2dd2a6a3cb53ecaa92ec057f47",
+            "type": "botUserKey",
+            "properties": {
+                "botUserKey": "9ad269b87cbf88ad16964a583a2b84a00261d4bd2dd2a6a3cb53ecaa92ec057f47",
+                "plusfriendUserKey": "ZUUJcrxxbxEr",
+                "bot_user_key": "9ad269b87cbf88ad16964a583a2b84a00261d4bd2dd2a6a3cb53ecaa92ec057f47",
+                "plusfriend_user_key": "ZUUJcrxxbxEr"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5dca09a7ffa7480001411b36!",
+        "name": "번역 및 닮은 유명인 오픈빌더"
+    },
+    "action": {
+        "name": "api",
+        "clientExtra": [],
+        "params": {
+            "tran_text": "안녕?",
+            "sour": "ko",
+            "choice": "1",
+            "api": "set_tran",
+            "lang": "en"
+        },
+        "id": "5dca0a3e8192ac0001c5e8c2",
+        "detailParams": {
+            "tran_text": {
+                "origin": "안녕?",
+                "value": "안녕?",
+                "groupName": ""
+            },
+            "sour": {
+                "origin": "ko",
+                "value": "ko",
+                "groupName": ""
+            },
+            "choice": {
+                "origin": "1",
+                "value": "1",
+                "groupName": ""
+            },
+            "api": {
+                "origin": "set_tran",
+                "value": "set_tran",
+                "groupName": ""
+            },
+            "lang": {
+                "origin": "en",
+                "value": "en",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

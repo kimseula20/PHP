@@ -1,0 +1,106 @@
+2019-09-11 10:26:48 | 219.249.231.42
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-931ce5f5ac4d490e9869cdf75987d77c",
+    "X-Chappie-Footprint": "chp-931ce5f5ac4d490e9869cdf75987d77c",
+    "Content-Length": "1226",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy003 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "닮은 연예인 : 이지훈\r\n닮은 퍼센트 : 36.6079%"
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "api": {
+        "origin": "set_face",
+        "value": "set_face",
+        "groupName": ""
+    },
+    "image": {
+        "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k3WmKbAI\/mhm46rc6MkAb7TkhlCM6NK\/i_i6l7ztvqymct1.jpg",
+        "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k3WmKbAI\/mhm46rc6MkAb7TkhlCM6NK\/i_i6l7ztvqymct1.jpg",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d71e75192690d0001813876",
+        "name": "얼굴인식",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend",
+            "media": {
+                "type": "image",
+                "url": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k3WmKbAI\/mhm46rc6MkAb7TkhlCM6NK\/i_i6l7ztvqymct1.jpg"
+            }
+        },
+        "block": {
+            "id": "5d71e75192690d0001813876",
+            "name": "얼굴인식"
+        },
+        "utterance": "얼굴",
+        "lang": "kr",
+        "user": {
+            "id": "b6e35a4ab6704d44e19c4d58110868c95106b7b078e6ab5a7440dda594d79ade7e",
+            "type": "botUserKey",
+            "properties": {
+                "plusfriendUserKey": "aYHZSOAn52L1",
+                "botUserKey": "b6e35a4ab6704d44e19c4d58110868c95106b7b078e6ab5a7440dda594d79ade7e"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": [],
+        "params": {
+            "api": "set_face",
+            "image": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k3WmKbAI\/mhm46rc6MkAb7TkhlCM6NK\/i_i6l7ztvqymct1.jpg"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "api": {
+                "origin": "set_face",
+                "value": "set_face",
+                "groupName": ""
+            },
+            "image": {
+                "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k3WmKbAI\/mhm46rc6MkAb7TkhlCM6NK\/i_i6l7ztvqymct1.jpg",
+                "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k3WmKbAI\/mhm46rc6MkAb7TkhlCM6NK\/i_i6l7ztvqymct1.jpg",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

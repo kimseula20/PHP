@@ -1,0 +1,135 @@
+2019-09-06 09:54:22 | 219.249.231.41
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "grimlock-230cd4aef571471799dba1e65b5e901b",
+    "X-Chappie-Footprint": "chp-790521d4151848a180c143f6066f43e0",
+    "Content-Length": "998",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy002 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "Di"
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "tran_text": {
+        "origin": "di",
+        "value": "di",
+        "groupName": ""
+    },
+    "sour": {
+        "origin": "ko",
+        "value": "ko",
+        "groupName": ""
+    },
+    "choice": {
+        "origin": "1",
+        "value": "1",
+        "groupName": ""
+    },
+    "api": {
+        "origin": "set_tran",
+        "value": "set_tran",
+        "groupName": ""
+    },
+    "lang": {
+        "origin": "en",
+        "value": "en",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d6c75038192ac00011f4fe1",
+        "name": "영어",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Mini",
+            "ignoreMe": "true"
+        },
+        "block": {
+            "id": "5d6c75038192ac00011f4fe1",
+            "name": "영어"
+        },
+        "utterance": "1\n",
+        "lang": "kr",
+        "user": {
+            "id": "0bf5224c247c9f9b799b88dc598637c9e0264d8d754fe9dbe2df1646ef5e753359",
+            "type": "botUserKey",
+            "properties": {
+                "botUserKey": "0bf5224c247c9f9b799b88dc598637c9e0264d8d754fe9dbe2df1646ef5e753359"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "tran_api",
+        "clientExtra": [],
+        "params": {
+            "tran_text": "di",
+            "sour": "ko",
+            "choice": "1",
+            "api": "set_tran",
+            "lang": "en"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "tran_text": {
+                "origin": "di",
+                "value": "di",
+                "groupName": ""
+            },
+            "sour": {
+                "origin": "ko",
+                "value": "ko",
+                "groupName": ""
+            },
+            "choice": {
+                "origin": "1",
+                "value": "1",
+                "groupName": ""
+            },
+            "api": {
+                "origin": "set_tran",
+                "value": "set_tran",
+                "groupName": ""
+            },
+            "lang": {
+                "origin": "en",
+                "value": "en",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

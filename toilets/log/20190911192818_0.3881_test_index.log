@@ -1,0 +1,106 @@
+2019-09-11 19:28:14 | 219.249.231.40
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-0f2171ceaaf04c9396f9804e04076d9e",
+    "X-Chappie-Footprint": "chp-0f2171ceaaf04c9396f9804e04076d9e",
+    "Content-Length": "1230",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy001 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "닮은 유명인 : 이진\r\n닮은 퍼센트 : 26.2%\r\n성별 : 여자100%\r\n나이 : 24~28세\r\n표정 : 그냥100%\r\n방향 : 정면 얼굴100%"
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "api": {
+        "origin": "set_face",
+        "value": "set_face",
+        "groupName": ""
+    },
+    "image": {
+        "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3l99ZpVgU\/xujmSqSN9svGQdYxanxUUk\/i_vmfw7iyh9zwm1.jpeg",
+        "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3l99ZpVgU\/xujmSqSN9svGQdYxanxUUk\/i_vmfw7iyh9zwm1.jpeg",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d71e75192690d0001813876",
+        "name": "얼굴인식",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend",
+            "media": {
+                "type": "image",
+                "url": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3l99ZpVgU\/xujmSqSN9svGQdYxanxUUk\/i_vmfw7iyh9zwm1.jpeg"
+            }
+        },
+        "block": {
+            "id": "5d71e75192690d0001813876",
+            "name": "얼굴인식"
+        },
+        "utterance": "얼굴",
+        "lang": "kr",
+        "user": {
+            "id": "bbb215f625b0d91f4b0646e80b5ea52d6109ce0951a7445a2b8f7461fb9ae905b8",
+            "type": "botUserKey",
+            "properties": {
+                "plusfriendUserKey": "LTQO_bOotsAo",
+                "botUserKey": "bbb215f625b0d91f4b0646e80b5ea52d6109ce0951a7445a2b8f7461fb9ae905b8"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": [],
+        "params": {
+            "api": "set_face",
+            "image": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3l99ZpVgU\/xujmSqSN9svGQdYxanxUUk\/i_vmfw7iyh9zwm1.jpeg"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "api": {
+                "origin": "set_face",
+                "value": "set_face",
+                "groupName": ""
+            },
+            "image": {
+                "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3l99ZpVgU\/xujmSqSN9svGQdYxanxUUk\/i_vmfw7iyh9zwm1.jpeg",
+                "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3l99ZpVgU\/xujmSqSN9svGQdYxanxUUk\/i_vmfw7iyh9zwm1.jpeg",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

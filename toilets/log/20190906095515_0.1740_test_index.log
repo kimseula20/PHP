@@ -1,0 +1,135 @@
+2019-09-06 09:55:15 | 219.249.231.40
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "grimlock-176c26ba34a64c8599327079e4b36cc6",
+    "X-Chappie-Footprint": "chp-a4ad873a8a654edfab95a41c4668b161",
+    "Content-Length": "1061",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy001 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "Apa kabar?"
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "tran_text": {
+        "origin": "안녕하세요",
+        "value": "안녕하세요",
+        "groupName": ""
+    },
+    "sour": {
+        "origin": "ko",
+        "value": "ko",
+        "groupName": ""
+    },
+    "choice": {
+        "origin": "1",
+        "value": "1",
+        "groupName": ""
+    },
+    "api": {
+        "origin": "set_tran",
+        "value": "set_tran",
+        "groupName": ""
+    },
+    "lang": {
+        "origin": "id",
+        "value": "id",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d6cbfc68192ac00011f52f2",
+        "name": "인도네시아어",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Mini",
+            "ignoreMe": "true"
+        },
+        "block": {
+            "id": "5d6cbfc68192ac00011f52f2",
+            "name": "인도네시아어"
+        },
+        "utterance": "5\n",
+        "lang": "kr",
+        "user": {
+            "id": "0bf5224c247c9f9b799b88dc598637c9e0264d8d754fe9dbe2df1646ef5e753359",
+            "type": "botUserKey",
+            "properties": {
+                "botUserKey": "0bf5224c247c9f9b799b88dc598637c9e0264d8d754fe9dbe2df1646ef5e753359"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "tran_api",
+        "clientExtra": [],
+        "params": {
+            "tran_text": "안녕하세요",
+            "sour": "ko",
+            "choice": "1",
+            "api": "set_tran",
+            "lang": "id"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "tran_text": {
+                "origin": "안녕하세요",
+                "value": "안녕하세요",
+                "groupName": ""
+            },
+            "sour": {
+                "origin": "ko",
+                "value": "ko",
+                "groupName": ""
+            },
+            "choice": {
+                "origin": "1",
+                "value": "1",
+                "groupName": ""
+            },
+            "api": {
+                "origin": "set_tran",
+                "value": "set_tran",
+                "groupName": ""
+            },
+            "lang": {
+                "origin": "id",
+                "value": "id",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

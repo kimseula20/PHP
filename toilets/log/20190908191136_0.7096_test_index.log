@@ -1,0 +1,107 @@
+2019-09-08 19:11:36 | 219.249.231.42
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-c18c854590d94674a34edd290377a7eb",
+    "X-Chappie-Footprint": "chp-c18c854590d94674a34edd290377a7eb",
+    "Content-Length": "783",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy003 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "code": 1,
+        "data": "",
+        "name": [
+            {
+                "name": "khs",
+                "age": "18"
+            },
+            {
+                "name": "kks",
+                "age": "19"
+            },
+            {
+                "name": "kkk",
+                "age": "20"
+            }
+        ],
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "??kkk"
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "api": {
+        "origin": "get_table",
+        "value": "get_table",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d70a9fd8192ac00011f6d84",
+        "name": "DB테스트",
+        "extra": {
+            "reason": {
+                "code": 1,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend"
+        },
+        "block": {
+            "id": "5d70a9fd8192ac00011f6d84",
+            "name": "DB테스트"
+        },
+        "utterance": "D",
+        "lang": "kr",
+        "user": {
+            "id": "bbb215f625b0d91f4b0646e80b5ea52d6109ce0951a7445a2b8f7461fb9ae905b8",
+            "type": "botUserKey",
+            "properties": {
+                "plusfriendUserKey": "LTQO_bOotsAo",
+                "botUserKey": "bbb215f625b0d91f4b0646e80b5ea52d6109ce0951a7445a2b8f7461fb9ae905b8"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": null,
+        "params": {
+            "api": "get_table"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "api": {
+                "origin": "get_table",
+                "value": "get_table",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

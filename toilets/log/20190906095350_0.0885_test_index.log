@@ -1,0 +1,86 @@
+2019-09-06 09:53:50 | 219.249.231.42
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "grimlock-7c22437b50e5483ba71f644334d4bd61",
+    "X-Chappie-Footprint": "thrust-2c78a9cc-cc6d-4bd5-b928-8f46a422737e",
+    "Content-Length": "532",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy003 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "0": {
+            "simpleText": {
+                "text": "잘못된 접근입니다.처음으로 돌아가세요."
+            }
+        },
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "디폴트라능"
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "lang": {
+        "origin": "en",
+        "value": "en",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "pbp3itklahnrrynbn61f56yg",
+        "name": "블록 이름"
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "ignoreMe": "true"
+        },
+        "block": {
+            "id": "pbp3itklahnrrynbn61f56yg",
+            "name": "블록 이름"
+        },
+        "utterance": "발화 내용",
+        "lang": null,
+        "user": {
+            "id": "546741",
+            "type": "accountId",
+            "properties": []
+        }
+    },
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256",
+        "name": "봇 이름"
+    },
+    "action": {
+        "name": "owpsna0lj0",
+        "clientExtra": null,
+        "params": {
+            "lang": "en"
+        },
+        "id": "8o17sapbyi7cp4iebdjkikxa",
+        "detailParams": {
+            "lang": {
+                "origin": "en",
+                "value": "en",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

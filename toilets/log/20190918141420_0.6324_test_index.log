@@ -1,0 +1,18 @@
+2019-09-18 14:14:20 | 1.234.82.11
+| header Data 
+{
+    "host": "khs.chatbotstore.ai",
+    "content-type": "application\/x-www-form-urlencoded",
+    "content-length": "24",
+    "Connection": "close"
+}
+| Result Data 
+null
+| Params Data 
+null
+| Request Data 
+{
+    "api": "test_data",
+    "test_data": ""
+}
+test : non

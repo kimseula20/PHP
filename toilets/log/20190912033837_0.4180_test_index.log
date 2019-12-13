@@ -1,0 +1,18 @@
+2019-09-12 03:38:37 | 211.176.125.70
+| header Data 
+{
+    "Accept": "text\/html;q=1.0,application\/xhtml+xml;q=1.0,application\/xml;q=1.0,text\/plain;q=0.9,text\/xml;q=1.0,text\/tab-separated-values;q=0.8,text\/css;q=0.5,image\/gif;q=0.5,audio\/mpeg;q=0.5,*;q=0.1",
+    "Accept-Charset": "UTF-8;q=1.0,UTF-8;q=0.5,*;q=0.1",
+    "Accept-Encoding": "gzip,deflate,compress",
+    "Connection": "close",
+    "Host": "khs.chatbotstore.ai",
+    "TE": "gzip,deflate,compress,identity;q=0.5,chuncked;q=0.1",
+    "User-Agent": "Mozilla\/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident\/6.0)"
+}
+| Result Data 
+null
+| Params Data 
+null
+| Request Data 
+[]
+test : non

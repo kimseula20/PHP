@@ -1,0 +1,135 @@
+2019-09-09 17:50:17 | 219.249.231.42
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-c9db3c0858ce46ff9e07419477be6adb",
+    "X-Chappie-Footprint": "chp-c9db3c0858ce46ff9e07419477be6adb",
+    "Content-Length": "2246",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy003 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "파일 크기=14634POST \/vision\/v1\/예능 HTTP\/1.1 호스트: naveropenapi.apigw.ntruss.com 수락: *\/* X-NCP-APIGW-API-KEY-ID: dac_Js7aOVbTdVLDHcw X-NCP-APIGW-I-KEY: m7tXn3keld: 14927 기대 컨텐츠\/멀티플랫폼\n[status_code]:401\n오류 내용:{\"오류\":{\"errorCode\":\"200\",\"message\":\"인증 실패\"}"
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "tran_text": {
+        "origin": "filesize=14634POST \/vision\/v1\/celebrity HTTP\/1.1 Host: naveropenapi.apigw.ntruss.com Accept: *\/* X-NCP-APIGW-API-KEY-ID: dac_Js7aOVbTdVLDHHcw X-NCP-APIGW-API-KEY: m7tXn3kld7 Content-Length: 14927 Expect: 100-continue Content-Type:multipart\/form-data; boundary=----------------------------58ad5bbb6fed\n[status_code]:401\nError 내용:{\"error\":{\"errorCode\":\"200\",\"message\":\"Authentication Failed\"}}",
+        "value": "filesize=14634POST \/vision\/v1\/celebrity HTTP\/1.1 Host: naveropenapi.apigw.ntruss.com Accept: *\/* X-NCP-APIGW-API-KEY-ID: dac_Js7aOVbTdVLDHHcw X-NCP-APIGW-API-KEY: m7tXn3kld7 Content-Length: 14927 Expect: 100-continue Content-Type:multipart\/form-data; boundary=----------------------------58ad5bbb6fed\n[status_code]:401\nError 내용:{\"error\":{\"errorCode\":\"200\",\"message\":\"Authentication Failed\"}}",
+        "groupName": ""
+    },
+    "sour": {
+        "origin": "ko",
+        "value": "ko",
+        "groupName": ""
+    },
+    "choice": {
+        "origin": "2",
+        "value": "2",
+        "groupName": ""
+    },
+    "api": {
+        "origin": "set_tran",
+        "value": "set_tran",
+        "groupName": ""
+    },
+    "lang": {
+        "origin": "en",
+        "value": "en",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d6c75038192ac00011f4fe1",
+        "name": "영어",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend"
+        },
+        "block": {
+            "id": "5d6c75038192ac00011f4fe1",
+            "name": "영어"
+        },
+        "utterance": "1",
+        "lang": "kr",
+        "user": {
+            "id": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+            "type": "botUserKey",
+            "properties": {
+                "plusfriendUserKey": "ZUW9n85xbxEr",
+                "botUserKey": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": [],
+        "params": {
+            "tran_text": "filesize=14634POST \/vision\/v1\/celebrity HTTP\/1.1 Host: naveropenapi.apigw.ntruss.com Accept: *\/* X-NCP-APIGW-API-KEY-ID: dac_Js7aOVbTdVLDHHcw X-NCP-APIGW-API-KEY: m7tXn3kld7 Content-Length: 14927 Expect: 100-continue Content-Type:multipart\/form-data; boundary=----------------------------58ad5bbb6fed\n[status_code]:401\nError 내용:{\"error\":{\"errorCode\":\"200\",\"message\":\"Authentication Failed\"}}",
+            "sour": "ko",
+            "choice": "2",
+            "api": "set_tran",
+            "lang": "en"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "tran_text": {
+                "origin": "filesize=14634POST \/vision\/v1\/celebrity HTTP\/1.1 Host: naveropenapi.apigw.ntruss.com Accept: *\/* X-NCP-APIGW-API-KEY-ID: dac_Js7aOVbTdVLDHHcw X-NCP-APIGW-API-KEY: m7tXn3kld7 Content-Length: 14927 Expect: 100-continue Content-Type:multipart\/form-data; boundary=----------------------------58ad5bbb6fed\n[status_code]:401\nError 내용:{\"error\":{\"errorCode\":\"200\",\"message\":\"Authentication Failed\"}}",
+                "value": "filesize=14634POST \/vision\/v1\/celebrity HTTP\/1.1 Host: naveropenapi.apigw.ntruss.com Accept: *\/* X-NCP-APIGW-API-KEY-ID: dac_Js7aOVbTdVLDHHcw X-NCP-APIGW-API-KEY: m7tXn3kld7 Content-Length: 14927 Expect: 100-continue Content-Type:multipart\/form-data; boundary=----------------------------58ad5bbb6fed\n[status_code]:401\nError 내용:{\"error\":{\"errorCode\":\"200\",\"message\":\"Authentication Failed\"}}",
+                "groupName": ""
+            },
+            "sour": {
+                "origin": "ko",
+                "value": "ko",
+                "groupName": ""
+            },
+            "choice": {
+                "origin": "2",
+                "value": "2",
+                "groupName": ""
+            },
+            "api": {
+                "origin": "set_tran",
+                "value": "set_tran",
+                "groupName": ""
+            },
+            "lang": {
+                "origin": "en",
+                "value": "en",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

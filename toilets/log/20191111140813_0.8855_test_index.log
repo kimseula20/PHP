@@ -1,0 +1,21 @@
+2019-11-11 14:08:13 | 219.249.231.42
+| header Data 
+{
+    "Content-Type": "application\/json",
+    "X-Request-Id": "grimlock-61033a3991c241928343b95427475a9d",
+    "X-Chappie-Footprint": "thrust-4c95c3a7-9d4a-4eda-bc2e-e778ce54ac00",
+    "Content-Length": "471",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy003 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+null
+| Params Data 
+null
+| Request Data 
+[]
+test : non

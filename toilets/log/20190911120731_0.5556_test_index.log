@@ -1,0 +1,106 @@
+2019-09-11 12:07:30 | 219.249.231.40
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-88cc3a3282c44d07bc9e186fca3f786b",
+    "X-Chappie-Footprint": "chp-88cc3a3282c44d07bc9e186fca3f786b",
+    "Content-Length": "1236",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy001 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "닮은 연예인 : 사이토유리\r\n닮은 퍼센트 : 1%\r\n성별 : 여자99.4%\r\n나이 : 6~10세\r\n표정 : 슬픔70%\r\n포즈 : 거짓얼굴?75.9%"
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "api": {
+        "origin": "set_face",
+        "value": "set_face",
+        "groupName": ""
+    },
+    "image": {
+        "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k3WmKsvi\/xXSfNqybU3bYP7MY4QRtiK\/i_k4d45waijc491.jpeg",
+        "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k3WmKsvi\/xXSfNqybU3bYP7MY4QRtiK\/i_k4d45waijc491.jpeg",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d71e75192690d0001813876",
+        "name": "얼굴인식",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend",
+            "media": {
+                "type": "image",
+                "url": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k3WmKsvi\/xXSfNqybU3bYP7MY4QRtiK\/i_k4d45waijc491.jpeg"
+            }
+        },
+        "block": {
+            "id": "5d71e75192690d0001813876",
+            "name": "얼굴인식"
+        },
+        "utterance": "얼굴인식",
+        "lang": "kr",
+        "user": {
+            "id": "92cc4cf2c5130a610cfe1bde3e4247e6dffbe434661339a45431f22017a2216c0f",
+            "type": "botUserKey",
+            "properties": {
+                "plusfriendUserKey": "VfG3eDnFLx2w",
+                "botUserKey": "92cc4cf2c5130a610cfe1bde3e4247e6dffbe434661339a45431f22017a2216c0f"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": [],
+        "params": {
+            "api": "set_face",
+            "image": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k3WmKsvi\/xXSfNqybU3bYP7MY4QRtiK\/i_k4d45waijc491.jpeg"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "api": {
+                "origin": "set_face",
+                "value": "set_face",
+                "groupName": ""
+            },
+            "image": {
+                "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k3WmKsvi\/xXSfNqybU3bYP7MY4QRtiK\/i_k4d45waijc491.jpeg",
+                "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k3WmKsvi\/xXSfNqybU3bYP7MY4QRtiK\/i_k4d45waijc491.jpeg",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

@@ -1,0 +1,263 @@
+* 정규표현식 *
+정규표현식을 통해 선택된 단어 -> ☞☜
+first match -> 정규표현식의 구문을 사용하면 소스에서 첫번째에 해당되면 first match
+All matches -> 정규표현식의 구문을 사용하면 소스에서 모든 해당되면 all match
+------------------------------------------------------------------------------------------------------------------
+                                        Source : Hello, world!
+case1
+    RegularExpression : Hello
+        First match : ☞Hello☜, world!
+        All matches : ☞Hello☜, world!
+case2
+    RegularExpression : hello
+        First match : Hello, world!
+        All matches : Hello, world!
+-> 정규표현식은 대소문자를 구분한다.
+-> 대소문자 구분하지 않게 바꾸고 싶다면 정규식 표현을 바꾸거나 설정을 바꿔야 한다.
+------------------------------------------------------------------------------------------------------------------
+                                        Source : Hello, world!
+case1
+    RegularExpression : Hello, world
+        First match : ☞Hello, world☜!
+        All matches : ☞Hello, world☜!
+case2
+    RegularExpression : Hello,  world
+        First match : Hello, world!
+        All matches : Hello, world!
+-> 위와 아래의 정규표현식을 확인해보면 띄어쓰기가 다르다. 띄어쓰기에 따라서도 검색 결과가 달라진다.
+------------------------------------------------------------------------------------------------------------------
+                                        Source : who is who
+case1
+    RegularExpression : ^who
+        First match : ☞who☜ is who
+        All matches : ☞who☜ is who
+-> 캐럿(^)이 등장하면 캐럿 뒤에 있는 문자가 소스 상에서 해당 문자로 시작되는 문자를 찾는다.
+case2
+    RegularExpression : who$
+        First match : who is ☞who☜
+        All matches : who is ☞who☜
+-> 문자 뒤에 달러(&)가 오게 되면 달러 앞의 문자가 소스 상에서 해당 문자로 끝나는 문자를 찾는다.
+------------------------------------------------------------------------------------------------------------------
+                                        Source : $12$ \-\ $25$
+case1
+    RegularExpression : ^$
+        First match : $12$ \-\ $25$
+        All matches : $12$ \-\ $25$
+-> case1의 경우, 의도는 ^ 뒤에 오는 문자가 소스 상에 해당 문자로 시작되는 문자를 찾는 것이다.
+   하지만 찾지 못하는 이유는 $가 정규표현식에서 문자열의 끝을 의미하는 특수한 기호이기 때문이다.
+case2
+    RegularExpression : \$
+        First match : ☞$☜12$ \-\ $25$
+        All matches : ☞$☜12☞$☜ \-\ ☞$☜25☞$☜
+-> 정규표현식에서 의미가 있는 기호를 무효화 시키는 것이 \(백슬래쉬,역슬래쉬)이다.
+   따라서 정규표현식에서 의미가 있는 기호 앞에 \를 붙여주게 되면 단순한 문자로 바꿔준다
+case3
+    RegularExpression : ^\$
+        First match : ☞$☜12$ \-\ $25$
+        All matches : ☞$☜12$ \-\ $25$
+-> case1의 경우를 case3과 같이 바꾸면 된다.
+   정규표현식에서 의미가 있는 기호를 단순한 문자로 탈출 시켜주는 것을 'escape'라고 한다.
+   (즉 \를 'escape'라고 한다)
+case4
+    RegularExpression : \$$
+        First match : $12$ \-\ $25☞$☜
+        All matches : $12$ \-\ $25☞$☜
+case5
+    RegularExpression : \\
+        First match : $12$ ☞\☜-\ $25$
+        All matches : $12$ ☞\☜-☞\☜ $25$
+-> \를 검색하고 싶을 땐 위와 같이 앞에 escaping의 역할인 \를 한번 더 써주게 되면
+   사용가자 원하는 \를 검색할 수 있다.
+------------------------------------------------------------------------------------------------------------------
+                                Source : Regular expressions are powerful!!!
+case1
+    RegularExpression : .
+        First match : ☞R☜egular expressions are powerful!!!
+        All matches : ☞Regular expressions are powerful!!!☜
+-> 정규표현식으로 찾고자 하는 단어나 혹은 문자열 등이 명확하지 않는 경우 사용한다.
+   .(포인트)의 경우 대소문자, 띄어쓰기, 느낌표와 같은 기호 등등 구분 없이 모든 문자를 의미한다.(일종의 와일드카드)
+case2
+    RegularExpression : ......
+        First match : ☞Regula☜r expressions are powerful!!!
+        All matches : ☞Regular expressions are powerf☜ul!!!
+-> all match의 경우 마지만 5개의 단어가 선택되지 않은 이유는 앞에서부터 6개씩 끊어서 찾기 때문에 마지막 5개는 조건에
+   충족되지 않아 선택되지 않았다.
+------------------------------------------------------------------------------------------------------------------
+                                                Source : O.K.
+case1
+    Regular Expression : .
+        First match : ☞O☜.K.
+        All matches : ☞O.K.☜
+-> case1의 경우 .(온점)을 검색하고자 했으나 .는 정규표현식에서 특수한 기호로 사용되기 때문에 위와 같이 검색이 된다.
+case2
+    Regular Expression : \.
+        First match : O☞.☜K.
+        All matches : O☞.☜K☞.☜
+-> escaping의 역할인 \를 찾고자 하는 .앞에 붙이게 되면 원하는 문자를 찾을 수 있다.
+case3
+    Regular Expression : \..\.
+        First match : O☞.K.☜
+        All matches : O☞.K.☜
+-----------------------------------------------------------------------------------------------------------------
+                                            Source : How do you do?
+case1
+    Regular Expression : [oyu]
+        First match : H☞o☜w do you do?
+        All matches : H☞o☜w d☞o☜ ☞you☜ d☞o☜?
+-> [](대괄호)는 []안에 있는 문자들을 찾는 기능이다.
+   []포함 안에 있는 문자는 전체 하나의 문자로 인식한다.
+case2
+    Regular Expression : [dH].
+        First match : ☞Ho☜w do you do?
+        All matches : ☞Ho☜w ☞do☜ you ☞do☜?
+-> []안의 문자들과 .의 와일드카드 기능으로 정규표현식을 작성한 예시이다. 따라서 앞에 'd' 혹은 'H'로 시작되고 뒤에
+   문자가 붙어있으면 찾는다.
+case3
+    Regular Expression : [owy][yow]
+        First match : H☞ow☜ do you do?
+        All matches : H☞ow☜ do ☞yo☜u do?
+-> []가 하나의 문자로 인식되기 때문에 앞에 있는 []안에 있는 문자들, 뒤에 있는 []안에 있는 문자가 나란히 있는 것을 찾게 된다.
+-----------------------------------------------------------------------------------------------------------------
+Source : ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+Case 1
+    Regular Expression:	[C-K]
+        First match: AB☞C☜DEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+        All matches: AB☞CDEFGHIJK☜LMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+Case 2
+    Regular Expression:	[CDEFGHIJK]
+        First match: AB☞C☜DEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+        All matches: AB☞CDEFGHIJK☜LMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+Case 3
+    Regular Expression:	[a-d]
+        First match:  ABCDEFGHIJKLMNOPQRSTUVWXYZ ☞a☜bcdefghijklmnopqrstuvwxyz 0123456789
+        All matches: ABCDEFGHIJKLMNOPQRSTUVWXYZ ☞abcd☜efghijklmnopqrstuvwxyz 0123456789
+Case 4
+    Regular Expression:	[2-6]
+        First match: ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 01☞2☜3456789
+        All matches: ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 01☞23456☜789
+Case 5
+    Regular Expression:	[C-Ka-d2-6]
+        First match: AB☞C☜DEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+        All matches: AB☞CDEFGHIJK☜LMNOPQRSTUVWXYZ ☞abcd☜efghijklmnopqrstuvwxyz 01☞23456☜789
+-----------------------------------------------------------------------------------------------------------------
+Source : ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+Case 1
+    Regular Expression:	[^CDghi45]
+        First match: ☞A☜BCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+        All matches: ☞AB☜CD☞EFGHIJKLMNOPQRSTUVWXYZ abcdef☜ghi☞jklmnopqrstuvwxyz 0123☜45☞6789☜
+-> 원래 캐럿(^)은 ^위에 오는 문자를 찾는 의미이지만 대괄호([]) 안에 있을 경우 NOT을 의미한다.
+   따라서 ^뒤에 오는 것을 제외한 것들만 찾게 된다.
+Case 2
+    Regular Expression:	[^W-Z]
+        First match: ☞A☜BCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+        All matches: ☞ABCDEFGHIJKLMNOPQRSTUV☜WXYZ ☞abcdefghijklmnopqrstuvwxyz 0123456789☜
+-----------------------------------------------------------------------------------------------------------------
+Source : Monday Tuesday Friday
+Case 1
+    Regular Expression: (on|ues|rida)
+        First match: M☞on☜day Tuesday Friday
+        All matches: M☞on☜day T☞ues☜day F☞rida☜y
+-> sub pattern을 사용할 땐 소괄호를 사용한다.
+   파이프(|)의 경우 |사이에 있는 것이 하나를 의미한다.
+Case 2
+    Regular Expression: (Mon|Tues|Fri)day
+        First match: ☞Monday☜ Tuesday Friday
+        All matches: ☞Monday☜ ☞Tuesday☜ ☞Friday☜
+-> 위와 같이 공통된 부분은 sub pattern으로 빼서 사용할 수 있다.
+Case 3
+    Regular Expression: ..(id|esd|nd)ay
+        First match: ☞Monday☜ Tuesday Friday
+        All matches: ☞Monday☜ ☞Tuesday☜ ☞Friday☜
+-> .두개는 괄호 안의 해당되는 거 앞에 문자 2개를 의미한다.
+-----------------------------------------------------------------------------------------------------------------
+Source : aabc abc bc
+Case 1
+    Regular Expression: a*b
+        First match: ☞aab☜c abc bc
+        All matches: ☞aab☜c ☞ab☜c ☞b☜c
+->Quantifiers(수량자: *,+,?)
+  * 앞에 있는 문자가 0~여러개 -> *뒤에 있는 걸 기준으로 잡는 것이 편하다.
+  b앞에 a가 0또는 여러개일 경우 선택된다.
+Case 2
+    Regular Expression: a+b
+        First match: ☞aab☜c abc bc
+        All matches: ☞aab☜c ☞ab☜c bc
+-> + 앞에 있는 문자가 1~여러개 -> +뒤에 있는 걸 기준으로 잡고 b 앞에 a가 1또는 여러개 경우 선택된다.
+Case 3
+    Regular Expression: a?b
+        First match: a☞ab☜c abc bc
+        All matches: a☞ab☜c ☞ab☜c ☞b☜c
+-> ? 앞에 있는 문자가 0또는 1 -> ?뒤에 있는 걸 기준으로 잡고 b앞에 a가 1개 또는 0개 일 경우 선택된다.
+-----------------------------------------------------------------------------------------------------------------
+Source : -@- *** -- "*" -- *** -@-
+case 1
+    Regular Expression: .*
+        First match: ☞-@- *** -- "*" -- *** -@-☜
+        All matches: ☞-@- *** -- "*" -- *** -@-☜
+-> *은 0부터 여러개를 포함! .은 모든 텍스트! 따라서 모두 선택된다.
+case 2
+    Regular Expression: -A*-
+        First match: -@- *** ☞--☜ "*" -- *** -@-
+        All matches: -@- *** ☞--☜ "*" ☞--☜ *** -@-
+-> *
+case 3
+    Regular Expression: [-@]*
+        First match: ☞-@-☜ *** -- "*" -- *** -@-
+        All matches: ☞-@-☜ *** ☞--☜ "*" ☞--☜ *** ☞-@-☜
+-----------------------------------------------------------------------------------------------------------------
+Source : -@@@- * ** - - "*" -- * ** -@@@-
+case 1
+    Regular Expression:
+        First match:
+        All matches:
+case 2
+    Regular Expression:
+        First match:
+        All matches:
+case 3
+    Regular Expression:
+        First match:
+        All matches:
+-----------------------------------------------------------------------------------------------------------------
+Source :
+case 1
+    Regular Expression:
+        First match:
+        All matches:
+case 2
+    Regular Expression:
+        First match:
+        All matches:
+case 3
+    Regular Expression:
+        First match:
+        All matches:
+-----------------------------------------------------------------------------------------------------------------
+Source :
+case 1
+    Regular Expression:
+        First match:
+        All matches:
+case 2
+    Regular Expression:
+        First match:
+        All matches:
+case 3
+    Regular Expression:
+        First match:
+        All matches:
+-----------------------------------------------------------------------------------------------------------------
+Source :
+case 1
+    Regular Expression:
+        First match:
+        All matches:
+case 2
+    Regular Expression:
+        First match:
+        All matches:
+case 3
+    Regular Expression:
+        First match:
+        All matches:
+-----------------------------------------------------------------------------------------------------------------

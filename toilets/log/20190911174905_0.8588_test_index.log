@@ -1,0 +1,106 @@
+2019-09-11 17:49:04 | 219.249.231.42
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-37ee24fe2bd844a5aca3011b0ac80a17",
+    "X-Chappie-Footprint": "chp-37ee24fe2bd844a5aca3011b0ac80a17",
+    "Content-Length": "1222",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy003 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "닮은 유명인 : 송재림\r\n닮은 퍼센트 : 22.4%\r\n성별 : 남자98.5%\r\n나이 : 20~24세\r\n표정 : 그냥100%\r\n방향 : 정면 얼굴100%"
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "api": {
+        "origin": "set_face",
+        "value": "set_face",
+        "groupName": ""
+    },
+    "image": {
+        "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k31axvZ1\/kq4uKbOYjZii2y1QQtzzs1\/i_0gg3eju00ahx.jpg",
+        "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k31axvZ1\/kq4uKbOYjZii2y1QQtzzs1\/i_0gg3eju00ahx.jpg",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d71e75192690d0001813876",
+        "name": "얼굴인식",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend",
+            "media": {
+                "type": "image",
+                "url": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k31axvZ1\/kq4uKbOYjZii2y1QQtzzs1\/i_0gg3eju00ahx.jpg"
+            }
+        },
+        "block": {
+            "id": "5d71e75192690d0001813876",
+            "name": "얼굴인식"
+        },
+        "utterance": "얼굴",
+        "lang": "kr",
+        "user": {
+            "id": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47",
+            "type": "botUserKey",
+            "properties": {
+                "plusfriendUserKey": "ZUW9n85xbxEr",
+                "botUserKey": "9a525b8ceda3052494cff67dec6f492af161d4bd2dd2a6a3cb53ecaa92ec057f47"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "makeHS_api",
+        "clientExtra": [],
+        "params": {
+            "api": "set_face",
+            "image": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k31axvZ1\/kq4uKbOYjZii2y1QQtzzs1\/i_0gg3eju00ahx.jpg"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "api": {
+                "origin": "set_face",
+                "value": "set_face",
+                "groupName": ""
+            },
+            "image": {
+                "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k31axvZ1\/kq4uKbOYjZii2y1QQtzzs1\/i_0gg3eju00ahx.jpg",
+                "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3k31axvZ1\/kq4uKbOYjZii2y1QQtzzs1\/i_0gg3eju00ahx.jpg",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

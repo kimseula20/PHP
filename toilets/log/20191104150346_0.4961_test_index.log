@@ -1,0 +1,19 @@
+2019-11-04 15:03:46 | 106.241.245.242
+| header Data 
+{
+    "User-Agent": "PostmanRuntime\/7.18.0",
+    "Accept": "*\/*",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "3ba9f798-f9bf-4ff6-999e-84bb8f3be671",
+    "Host": "khs.chatbotstore.ai",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "0",
+    "Connection": "keep-alive"
+}
+| Result Data 
+null
+| Params Data 
+null
+| Request Data 
+[]
+test : non

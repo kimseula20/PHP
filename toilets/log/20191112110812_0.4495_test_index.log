@@ -1,0 +1,120 @@
+2019-11-12 11:08:10 | 219.249.231.42
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-387373b42ba846bd8712b0a8c9ffb5b8",
+    "X-Chappie-Footprint": "chp-387373b42ba846bd8712b0a8c9ffb5b8",
+    "Content-Length": "1379",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy003 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "닮은 유명인 : 아이유\r\n닮은 퍼센트 : 100%\r\n성별 : 여자99.9%\r\n나이 : 21~25세\r\n표정 : 그냥100%\r\n방향 : 정면 얼굴99.9%"
+                }
+            }
+        ],
+        "quickReplies": [
+            {
+                "label": "다시하기",
+                "action": "message",
+                "messageText": "얼굴"
+            },
+            {
+                "label": "처음으로",
+                "action": "message",
+                "messageText": "처음으로"
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "api": {
+        "origin": "set_face",
+        "value": "set_face",
+        "groupName": ""
+    },
+    "image": {
+        "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3pyW3NNCy\/LPkhSaEKpX9YCRZM67waz1\/i_nqkydoxf7guk.jpg",
+        "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3pyW3NNCy\/LPkhSaEKpX9YCRZM67waz1\/i_nqkydoxf7guk.jpg",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5dca121affa7480001411d0e",
+        "name": "얼굴인식",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend",
+            "media": {
+                "type": "image",
+                "url": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3pyW3NNCy\/LPkhSaEKpX9YCRZM67waz1\/i_nqkydoxf7guk.jpg"
+            }
+        },
+        "block": {
+            "id": "5dca121affa7480001411d0e",
+            "name": "얼굴인식"
+        },
+        "utterance": "닮은유명인",
+        "lang": "kr",
+        "user": {
+            "id": "9ad269b87cbf88ad16964a583a2b84a00261d4bd2dd2a6a3cb53ecaa92ec057f47",
+            "type": "botUserKey",
+            "properties": {
+                "botUserKey": "9ad269b87cbf88ad16964a583a2b84a00261d4bd2dd2a6a3cb53ecaa92ec057f47",
+                "plusfriendUserKey": "ZUUJcrxxbxEr",
+                "bot_user_key": "9ad269b87cbf88ad16964a583a2b84a00261d4bd2dd2a6a3cb53ecaa92ec057f47",
+                "plusfriend_user_key": "ZUUJcrxxbxEr"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5dca09a7ffa7480001411b36!",
+        "name": "번역 및 닮은 유명인 오픈빌더"
+    },
+    "action": {
+        "name": "api",
+        "clientExtra": [],
+        "params": {
+            "api": "set_face",
+            "image": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3pyW3NNCy\/LPkhSaEKpX9YCRZM67waz1\/i_nqkydoxf7guk.jpg"
+        },
+        "id": "5dca0a3e8192ac0001c5e8c2",
+        "detailParams": {
+            "api": {
+                "origin": "set_face",
+                "value": "set_face",
+                "groupName": ""
+            },
+            "image": {
+                "origin": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3pyW3NNCy\/LPkhSaEKpX9YCRZM67waz1\/i_nqkydoxf7guk.jpg",
+                "value": "http:\/\/dn-m.talk.kakao.com\/talkm\/bl3pyW3NNCy\/LPkhSaEKpX9YCRZM67waz1\/i_nqkydoxf7guk.jpg",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

@@ -1,0 +1,119 @@
+2019-11-12 11:15:49 | 219.249.231.40
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "chp-1483f0507a904c9faa0622717c818b41",
+    "X-Chappie-Footprint": "chp-1483f0507a904c9faa0622717c818b41",
+    "Content-Length": "1437",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy001 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "음성 내용이 없거나 이해를 하지 못했습니다."
+                }
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "api": {
+        "origin": "set_csr",
+        "value": "set_csr",
+        "groupName": ""
+    },
+    "lang": {
+        "origin": "1",
+        "value": "1",
+        "groupName": ""
+    },
+    "url": {
+        "origin": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzrc6ypK8T\/B2FN42hBJeoL7RWEq33KBk\/ow135n-aac.m4a",
+        "value": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzrc6ypK8T\/B2FN42hBJeoL7RWEq33KBk\/ow135n-aac.m4a",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5dca11f2ffa7480001411d07",
+        "name": "음성 읽어주기",
+        "extra": {
+            "reason": {
+                "code": 0,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Kakaotalk.plusfriend",
+            "media": {
+                "type": "audio",
+                "url": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzrc6ypK8T\/B2FN42hBJeoL7RWEq33KBk\/ow135n-aac.m4a"
+            }
+        },
+        "block": {
+            "id": "5dca11f2ffa7480001411d07",
+            "name": "음성 읽어주기"
+        },
+        "utterance": "음성을 텍스트로",
+        "lang": "kr",
+        "user": {
+            "id": "9ad269b87cbf88ad16964a583a2b84a00261d4bd2dd2a6a3cb53ecaa92ec057f47",
+            "type": "botUserKey",
+            "properties": {
+                "botUserKey": "9ad269b87cbf88ad16964a583a2b84a00261d4bd2dd2a6a3cb53ecaa92ec057f47",
+                "plusfriendUserKey": "ZUUJcrxxbxEr",
+                "bot_user_key": "9ad269b87cbf88ad16964a583a2b84a00261d4bd2dd2a6a3cb53ecaa92ec057f47",
+                "plusfriend_user_key": "ZUUJcrxxbxEr"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5dca09a7ffa7480001411b36!",
+        "name": "번역 및 닮은 유명인 오픈빌더"
+    },
+    "action": {
+        "name": "api",
+        "clientExtra": [],
+        "params": {
+            "api": "set_csr",
+            "lang": "1",
+            "url": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzrc6ypK8T\/B2FN42hBJeoL7RWEq33KBk\/ow135n-aac.m4a"
+        },
+        "id": "5dca0a3e8192ac0001c5e8c2",
+        "detailParams": {
+            "api": {
+                "origin": "set_csr",
+                "value": "set_csr",
+                "groupName": ""
+            },
+            "lang": {
+                "origin": "1",
+                "value": "1",
+                "groupName": ""
+            },
+            "url": {
+                "origin": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzrc6ypK8T\/B2FN42hBJeoL7RWEq33KBk\/ow135n-aac.m4a",
+                "value": "http:\/\/dn-a4.talk.kakao.com\/talka\/hzrc6ypK8T\/B2FN42hBJeoL7RWEq33KBk\/ow135n-aac.m4a",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non

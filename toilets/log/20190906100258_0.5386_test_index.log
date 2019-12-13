@@ -1,0 +1,98 @@
+2019-09-06 10:02:58 | 219.249.231.42
+| header Data 
+{
+    "Req-Type": "makeHS",
+    "Req-Route": "openBuilderMkb",
+    "Content-Type": "application\/json",
+    "X-Request-Id": "grimlock-345a9be941ab43d5bad789c240ffdc48",
+    "X-Chappie-Footprint": "chp-892a8caeb6a547f89c655fd55f464ef9",
+    "Content-Length": "755",
+    "Accept": "*\/*",
+    "User-Agent": "AHC\/2.1",
+    "Host": "khs.chatbotstore.ai",
+    "Via": "1.1 bot-proxy003 (squid)",
+    "Cache-Control": "max-age=259200",
+    "Connection": "keep-alive"
+}
+| Result Data 
+{
+    "version": "2.0",
+    "template": {
+        "outputs": [
+            {
+                "simpleText": {
+                    "text": "오긴오나?"
+                }
+            }
+        ],
+        "quickReplies": [
+            {
+                "label": "처음으로",
+                "action": "message",
+                "messageText": "처음으로"
+            }
+        ]
+    }
+}
+| Params Data 
+{
+    "api": {
+        "origin": "get_table",
+        "value": "get_table",
+        "groupName": ""
+    }
+}
+| Request Data 
+{
+    "intent": {
+        "id": "5d70a9fd8192ac00011f6d84",
+        "name": "DB테스트",
+        "extra": {
+            "reason": {
+                "code": 1,
+                "message": "OK"
+            }
+        }
+    },
+    "userRequest": {
+        "timezone": "Asia\/Seoul",
+        "params": {
+            "surface": "Mini",
+            "ignoreMe": "true"
+        },
+        "block": {
+            "id": "5d70a9fd8192ac00011f6d84",
+            "name": "DB테스트"
+        },
+        "utterance": "디비\n",
+        "lang": "kr",
+        "user": {
+            "id": "0bf5224c247c9f9b799b88dc598637c9e0264d8d754fe9dbe2df1646ef5e753359",
+            "type": "botUserKey",
+            "properties": {
+                "botUserKey": "0bf5224c247c9f9b799b88dc598637c9e0264d8d754fe9dbe2df1646ef5e753359"
+            }
+        }
+    },
+    "contexts": [],
+    "bot": {
+        "id": "5d68c4c8ffa7480001c1e256!",
+        "name": "HSTest"
+    },
+    "action": {
+        "name": "tran_api",
+        "clientExtra": null,
+        "params": {
+            "api": "get_table"
+        },
+        "id": "5d6ccc2e8192ac00011f535c",
+        "detailParams": {
+            "api": {
+                "origin": "get_table",
+                "value": "get_table",
+                "groupName": ""
+            }
+        }
+    }
+}
+test : non
